@@ -1,0 +1,1 @@
+Allows baby sulfur cubes to have blocks too!

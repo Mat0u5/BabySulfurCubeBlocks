@@ -1,4 +1,4 @@
-package net.mat0u5.modid.mixin;
+package net.mat0u5.babycubeblocks.mixin;
 
 import net.minecraft.server.MinecraftServer;
 import org.spongepowered.asm.mixin.Mixin;

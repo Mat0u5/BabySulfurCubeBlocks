@@ -3,7 +3,8 @@
 	"package": "net.mat0u5.babycubeblocks.mixin",
 	"compatibilityLevel": "${javaVersion}",
 	"mixins": [
-		"ExampleMixin"
+		"SulfurCubeMixin",
+		"SulfurCubeSearchGoalMixin"
 	],
 	"injectors": {
 		"defaultRequire": 1

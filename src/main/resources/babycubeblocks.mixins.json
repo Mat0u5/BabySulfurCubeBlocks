@@ -3,6 +3,7 @@
 	"package": "net.mat0u5.babycubeblocks.mixin",
 	"compatibilityLevel": "${javaVersion}",
 	"mixins": [
+		"AgeableMobMixin",
 		"SulfurCubeMixin",
 		"SulfurCubeSearchGoalMixin"
 	],

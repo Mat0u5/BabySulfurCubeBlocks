@@ -8,10 +8,7 @@ import org.spongepowered.asm.mixin.injection.Redirect;
 @Mixin(targets = "net.minecraft.world.entity.monster.cubemob.SulfurCube$SulfurCubeSearchForItemsGoal")
 public class SulfurCubeSearchGoalMixin {
 
-    @Redirect(
-            method = "canUse",
-            at = @At(value = "INVOKE", target = "Lnet/minecraft/world/entity/monster/cubemob/SulfurCube;isBaby()Z")
-    )
+    @Redirect(method = "canUse", at = @At(value = "INVOKE", target = "Lnet/minecraft/world/entity/monster/cubemob/SulfurCube;isBaby()Z"))
     private boolean bypassBabyCheckForSearch(SulfurCube instance) {
         return false;
     }

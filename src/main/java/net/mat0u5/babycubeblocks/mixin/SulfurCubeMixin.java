@@ -46,6 +46,11 @@ public abstract class SulfurCubeMixin extends AgeableMob {
 		return false;
 	}
 
+	@Redirect(method = "equipItem", at = @At(value = "INVOKE", target = "Lnet/minecraft/world/entity/monster/cubemob/SulfurCube;isBaby()Z"))
+	private boolean bypassBabyCheckForEquip(SulfurCube instance) {
+		return false;
+	}
+
 	@Inject(method = "canHoldItem", at = @At("HEAD"), cancellable = true)
 	private void allowBabyToHoldItem(ItemStack itemStack, CallbackInfoReturnable<Boolean> cir) {
 		if (this.isBaby()) {

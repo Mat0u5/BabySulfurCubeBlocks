@@ -1,14 +1,13 @@
 {
-  "required": true,
-  "package": "net.mat0u5.babycubeblocks.mixin.client",
-  "compatibilityLevel": "${javaVersion}",
-  "client": [
-    "ExampleMixin"
-  ],
-  "mixins": [
-    "SulfurCubeInnerLayerMixin"
-  ],
-  "injectors": {
-    "defaultRequire": 1
+	"required": true,
+	"package": "net.mat0u5.babycubeblocks.mixin.client",
+	"compatibilityLevel": "${javaVersion}",
+	"client": [
+		"ExampleMixin"
+	],
+	"mixins": [
+	],
+	"injectors": {
+		"defaultRequire": 1
 	}
 }

@@ -6,7 +6,7 @@ import org.apache.logging.log4j.Logger;
 public class Main {
 
 	public static final String MOD_ID = "babycubeblocks";
-	public static final String MOD_VERSION = "1.0.0";
+	public static final String MOD_VERSION = "1.1.0";
 	public static final String MOD_FRIENDLY_NAME = "Baby Sulfur Cube Blocks";
 	public static final Logger LOGGER = LogManager.getLogger(MOD_ID);
 

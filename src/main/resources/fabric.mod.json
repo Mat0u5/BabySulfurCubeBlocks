@@ -1,32 +1,27 @@
 {
-	"schemaVersion": 1,
-	"id": "babycubeblocks",
-	"version": "${version}",
-	"name": "Baby Sulfur Cube Blocks",
-	"description": "Allows baby sulfur cubes to have blocks too!",
-	"authors": [
-		"Mat0u5"
-	],
-	"contact": {
-		"homepage": "https://fabricmc.net/",
-		"sources": "https://github.com/Mat0u5/BabySulfurCubeBlocks"
-	},
-	"license": "MIT",
-	"icon": "assets/babycubeblocks/icon.png",
-	"environment": "*",
-	"mixins": [
-		"babycubeblocks.mixins.json",
-		{
-			"config": "babycubeblocks.client.mixins.json",
-			"environment": "client"
-		}
-	],
-	"depends": {
-		"fabricloader": ">=0.14.21",
-		"minecraft": "${targetVersion}",
-		"java": ">=${javaVersion}"
-	},
-	"suggests": {
-		"another-mod": "*"
-	}
+  "schemaVersion": 1,
+  "id": "${id}",
+  "name": "${name}",
+  "version": "${version}",
+  "authors": ["${authors}"],
+  "contributors": ["${contributors}"],
+  "contact": {
+    "sources": "${sources_url}",
+    "issues": "${issues_url}",
+    "homepage": "${homepage_url}"
+  },
+  "description": "${description}",
+  "icon": "icon.png",
+  "license": "${license}",
+  "environment": "*",
+  "accessWidener": "aw/${sc_version}.accesswidener",
+  "entrypoints": {
+    "main": [
+      "${group}.${id}.platform.fabric.FabricEntrypoint"
+    ]
+  },
+  "mixins": [
+    "${id}.mixins.json"
+  ],
+  "depends": {}
 }
